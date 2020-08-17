@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span{
+        /*    把行内元素转化成块级*/
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: #0051ff;
+        }
+        div{
+            display: inline;
+            width: 200px;
+            height: 200px;
+        }
+        a{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+<span>行内inline</span>
+<span>行内inline</span>
+<div>div 式块级元素block</div>
+<div>div 式块级元素block</div>
+<a href="#"><div>百度</div></a>
+<a href="#">新浪</a>
+</body>
+</html>

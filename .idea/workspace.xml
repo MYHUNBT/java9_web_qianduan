@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="da021b7e-e9db-442c-812a-89a21c20a5aa" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,6 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -27,21 +47,26 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LiuBoTing\Desktop\GitHub\JavaSECode\FY_Java9_JavaSE\web_qianduan\java9_web_qianduan\dayo3\盒子模型" />
       <recent name="C:\Users\LiuBoTing\Desktop\GitHub\JavaSECode\FY_Java9_JavaSE\web_qianduan\java9_web_qianduan\day01" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LiuBoTing\Desktop\GitHub\JavaSECode\FY_Java9_JavaSE\web_qianduan\java9_web_qianduan\images" />
+      <recent name="C:\Users\LiuBoTing\Desktop\GitHub\JavaSECode\FY_Java9_JavaSE\web_qianduan\java9_web_qianduan\images\nav" />
       <recent name="C:\Users\LiuBoTing\Desktop\GitHub\JavaSECode\FY_Java9_JavaSE\web_qianduan\java9_web_qianduan\day01" />
+      <recent name="C:\Users\LiuBoTing\Desktop\GitHub\JavaSECode\FY_Java9_JavaSE\web_qianduan\java9_web_qianduan" />
       <recent name="C:\Users\LiuBoTing\Desktop\GitHub\JavaSECode\FY_Java9_JavaSE\web_qianduan\java9_web_qianduan\pic" />
     </key>
   </component>
@@ -56,25 +81,50 @@
       <workItem from="1597109184977" duration="1459000" />
       <workItem from="1597110720742" duration="1677000" />
       <workItem from="1597112606861" duration="501000" />
-      <workItem from="1597113933823" duration="4143000" />
+      <workItem from="1597113933823" duration="4717000" />
+      <workItem from="1597125926609" duration="69633000" />
+      <workItem from="1597451968360" duration="18758000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="506" y="235" key="#Notifications" timestamp="1597110828311">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="506" y="235" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1597110828311" />
-    <state x="516" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597109242075">
+    <state x="219" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597130292556">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="516" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1597109242075" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1597114942165">
+    <state x="219" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1597130292556" />
+    <state x="516" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597301356146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1597114942165" />
+    <state x="516" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1597301356146" />
+    <state x="270" y="0" key="SettingsEditor" timestamp="1597194883628">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1597194883628" />
+    <state x="341" y="183" key="run.anything.popup" timestamp="1597386962672">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="341" y="183" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1597386962672" />
+    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup" timestamp="1597370786090">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1597370786090" />
   </component>
 </project>
