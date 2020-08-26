@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+手机号码： <input type="number"> <button>发送</button>
+<script>
+    var btn = document.querySelector('button');
+    btn.addEventListener('click',function (){
+        var time = 3;
+        timer = setInterval(function (){
+            btn.disabled = true;
+            btn.innerHTML = '剩余'+ time + '秒';
+            time--;
+            btn.innerHTML = '剩余'+ time + '秒';
+            if(time === 0){
+                clearInterval(timer);
+                btn.disabled = false;
+                btn.innerHTML = '发送';
+            }
+
+        },1000)
+    })
+</script>
+
+
+
+
+<!--<script>-->
+<!--    var btn = document.querySelector('button');-->
+<!--    btn.addEventListener('click',function (){-->
+<!--        var time = 3;-->
+<!--        btn.disabled = true;-->
+<!--        btn.innerHTML = '剩余时间'+ time + '秒';-->
+<!--        timer = setInterval(function count(){-->
+<!--            time&#45;&#45;;-->
+<!--            btn.innerHTML = '剩余时间'+ time + '秒';-->
+<!--            if(time === 0){-->
+<!--                btn.innerHTML = '发送'-->
+<!--                // btn.removeEventListener(clearTimeout(timer),btn.disabled = false)-->
+<!--                clearInterval(timer);-->
+<!--                btn.disabled = false;-->
+<!--            }-->
+<!--        },1000)-->
+<!--    })-->
+<!--</script>-->
+</body>
+</html>

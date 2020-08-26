@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width: 600px;
+            cursor: pointer;
+        }
+
+        table td {
+            text-align: center;
+        }
+
+        table th {
+            background-color: blueviolet;
+        }
+
+        table tr {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div id="dv">
+    请输入姓名:
+    <input type="text" value="" id="uname"/>
+    <br/> 请输入邮箱:
+    <input type="text" value="" id="email"/>
+</div>
+
+<input type="button" value="添加" id="btn" />
+<table border="1" cellpadding="0" cellspacing="0" id="tb">
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>邮箱</th>
+    </tr>
+    </thead>
+    <tbody id="tbd">
+    <tr>
+        <td>小黑</td>
+        <td>xiaohei@126.com</td>
+    </tr>
+    </tbody>
+</table>
+<script>
+    var btn = document.querySelector('#btn');
+    var uname = document.querySelector('#uname');
+    var email = document.querySelector('#email');
+    var tbd = document.querySelector('#tbd');
+    btn.onclick = function (){
+        if(uname.value == '' || email.value == ''){
+            alert('信息填写不完整')
+        }else {
+            var tr = document.createElement('tr');
+            tbd.appendChild(tr);
+            var td1 = document.createElement('td');
+            td1.innerHTML = uname.value;
+            var td2 = document.createElement('td');
+            td2.innerHTML = email.value;
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            uname.value = '';
+            email.value = '';
+        }
+    }
+</script>
+</body>
+</html>

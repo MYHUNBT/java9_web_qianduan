@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img src="../images/hao/s.gif" alt="">
+    <p></p>
+
+<script>
+    // var imgs = document.getElementsByTagName();
+    var imgs = document.querySelector('img');
+    var p = document.querySelector('p');
+    function showImg(){
+        var date = new Date();
+        date.setHours(5);
+        var hours = date.getHours();
+        if (hours >= 0 && hours < 6) {
+            imgs.src = "../images/hao/z.gif";
+            p.innerHTML = "早上好";
+        }
+        if (hours >= 6 && hours < 12) {
+            imgs.src = "../images/hao/s.gif";
+            p.innerHTML = "上午好";
+        }
+        if (hours >= 12 && hours < 18) {
+            imgs.src = "../images/hao/x.gif";
+            p.innerHTML = "下午好";
+        }
+        if (hours >= 18 && hours < 24) {
+            imgs.src = "../images/hao/w.gif";
+            p.innerHTML = "晚上好";
+        }
+    }
+    showImg();
+    // var date = new Date();
+    // var hours = date.getHours();
+    // if (hours >= 0 && hours < 6) {
+    //     imgs.src = "../images/hao/s.gif";
+    //     p.innerHTML = "早上好";
+    // }
+    // if (hours >= 6 && hours < 12) {
+    //     imgs.src = "../images/hao/w.gif";
+    //     p.innerHTML = "上午好";
+    // }
+    // if (hours >= 12 && hours < 18) {
+    //     imgs.src = "../images/hao/x.gif";
+    //     p.innerHTML = "下午好";
+    // }
+    // if (hours >= 18 && hours < 24) {
+    //     imgs.src = "../images/hao/z.gif";
+    //     p.innerHTML = "晚上好";
+    //
+    // }
+    // times.innerHTML = showImg();
+</script>
+</body>
+</html>

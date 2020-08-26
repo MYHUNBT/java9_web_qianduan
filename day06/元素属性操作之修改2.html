@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="gt">鬼童丸</button>
+<button id="yjs">缘结神</button>
+<img src="../pic/鬼童.jpg" alt="">
+<script>
+    var gt = document.getElementById('gt');
+    var yjs = document.getElementById('yjs');
+    var img = document.querySelector('img');
+    gt.onclick = function (){
+        img.src = "../pic/鬼童.jpg";
+        img.title = "鬼童丸";
+    }
+    yjs.onclick = function (){
+        img.src = "../pic/小缘.jpg";
+        img.title = "缘结神";
+    }
+</script>
+</body>
+</html>

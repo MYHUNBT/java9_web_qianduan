@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        div{
+            /*给父级元素添加flex属性*/
+            display: flex;
+            width: 80%;
+            height: 300px;
+            background-color: blue;
+            flex-direction:row;
+            /*从头开始*/
+            /*justify-content: flex-start;*/
+            /*从尾部开始*/
+            /*justify-content: flex-end;*/
+            /*主轴居中*/
+            /*justify-content: center;*/
+            justify-content: space-between;
+            /*设置是否换行*/
+            flex-wrap: wrap;
+            /*align-items: center;*/
+            align-items: stretch; /*拉伸 侧轴（单行）*/
+            /*align-content: center;*/  /*侧轴（多行）*/
+        }
+        div span{
+            width: 20%;
+            /*height: 100px;*/
+            background-color: #ff4400;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+</div>
+</body>
+</html>

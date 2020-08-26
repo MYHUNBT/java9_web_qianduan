@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 1190px;
+            height: 80px;
+            background: url("../images/jdad/luzhou.jpg");
+        }
+        .close{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../images/jdad/close.jpg" alt="" class="close">
+    </div>
+    <script>
+        var box = document.querySelector('.box');
+        var close = document.querySelector('.close');
+        close.onclick = function (){
+            this.src = "";
+            box.style.background = "url('')";
+        }
+    </script>
+</body>
+</html>

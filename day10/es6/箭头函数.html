@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const fn = ()=> {
+        console.log('hhh')
+    }
+    fn();
+    //在箭头函数中，如果函数体只有一句代码，并且代码的执行结果就是函数的返回值
+    // 大括号可以省略不写
+    const sum = (s1, s2)=> s1+s2;
+    sum(10,20);
+    //在箭头函数中，如果形参只有一句一个，小括号可以省略
+    const fnn = v => v*v;
+    console.log(fnn(10))
+    //箭头函数不绑定this,箭头函数没有自己this关键字
+    //如果在减肉函数中使用this，this关键字将指向箭头函数定义位置中的this
+</script>
+</body>
+</html>

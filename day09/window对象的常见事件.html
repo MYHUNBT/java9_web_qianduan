@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>按钮
+</button>
+<script>
+    // window.onload = function (){
+    //     var btn = document.querySelector('button');
+    //     btn.addEventListener('click',function () {
+    //         alert('点我')
+    //     })
+    // }
+    window.addEventListener('load',function () {
+        var btn = document.querySelector('button');
+        btn.addEventListener('click',function () {
+            alert('点我')
+        })
+    })
+    // DOMContentLoaded 是dom加载完毕，加载速度比load快
+    window.addEventListener('DOMContentLoaded',function () {
+        alert('xixi')
+    })
+</script>
+</body>
+</html>

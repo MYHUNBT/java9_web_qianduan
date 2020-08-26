@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function Star(uname, age, sex) {
+            this.age = age;
+            this.name = uname;
+            this.sex = sex;
+            this.sayHello = function (){
+                console.log('sayHello' + this.name);
+            }
+        }
+        var star = new Star('刘柏廷',18,'男');
+        star.sayHello();
+        for (var starKey in star) {
+            console.log(starKey + "  " + star[starKey]);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

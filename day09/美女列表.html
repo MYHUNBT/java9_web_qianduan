@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--页面上有一些美女列表，当单击li时背景色变为红色，但点击按钮时会新增1个美女到列表最前面，并且单击新增的美女背景也会变为红色，-->
+<ul id="ul">
+    <li>西施</li>
+    <li>貂蝉</li>
+    <li>昭君</li>
+    <li>凤姐</li>
+    <li>芙蓉姐姐</li>
+</ul>
+<input type="button" value="按钮" id="btn" />
+<script>
+    var ul = document.querySelector('#ul');
+    var btn = document.querySelector('#btn');
+    ul.addEventListener('click',function (e) {
+        e.target.style.backgroundColor = 'red';
+    })
+    btn.addEventListener('click',function (e) {
+        var li = document.createElement('li');
+        li.innerHTML = '孙尚香';
+        ul.insertBefore(li,ul.children[0]);
+    })
+</script>
+</body>
+</html>

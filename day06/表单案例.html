@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>按钮</button>
+<input type="text" value="输入内容">
+<script>
+    var button = document.querySelector('button');
+    var input = document.querySelector('input');
+    button.onclick = function (){
+        //点击按钮input放入值
+        input.value = 'btn被点击';
+        // 如果想要某个表单被禁用，不能被点击
+        //this指向事件函数的调用者
+        this.disabled = true;
+    }
+</script>
+</body>
+</html>

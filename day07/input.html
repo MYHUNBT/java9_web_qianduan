@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" value="手机">
+<script>
+    var input = document.querySelector('input');
+    //焦点事件
+    input.onfocus = function (){
+        console.log('获取焦点')
+        this.style.color = 'blue'
+        if(this.value === '手机'){
+            input.value = '';
+        }
+    }
+    input.onblur = function (){
+        console.log('失去焦点')
+        if(this.value === ''){
+            input.value = '手机'
+        }
+    }
+</script>
+</body>
+</html>

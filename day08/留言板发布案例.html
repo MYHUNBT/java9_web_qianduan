@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 100px;
+        }
+
+        textarea {
+            width: 200px;
+            height: 100px;
+            border: 1px solid pink;
+            outline: none;
+            resize: none;
+        }
+
+        ul {
+            margin-top: 50px;
+        }
+
+        li {
+            position: relative;
+            width: 300px;
+            padding: 5px;
+            background-color: rgb(245, 209, 243);
+            color: red;
+            font-size: 14px;
+            margin: 15px 0;
+            list-style-type: none;
+        }
+        a{
+            text-align: right;
+            text-decoration :underline;
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<textarea name="" id=""></textarea>
+<button>发布</button>
+<ul></ul>
+
+<script>
+    var btn = document.querySelector('button');
+    var text = document.querySelector('textarea');
+    var ul = document.querySelector('ul');
+
+
+    btn.onclick = function (){
+        if(text.value == ''){
+            alert('啥都没有发个鸡')
+        }else {
+            // var a = document.createElement('a');
+            var li = document.createElement('li');
+            // a.innerHTML = "删除";
+            // a.style.textDecoration = "underline"
+            // a.style.display = "inline-block"
+            // a.style.marginLeft = "220px"
+            li.innerHTML = text.value + "<a href=\"#\">删除</a>";
+            // li.appendChild(a);
+            // ul.appendChild(li);
+            ul.insertBefore(li,ul.children[0])
+            // a.onclick = function (){
+            //     a.parentElement.remove();
+            // }
+            var a = document.querySelectorAll('a');
+            for (var i = 0; i < a.length; i++) {
+                a[i].onclick = function (){
+                    ul.removeChild(this.parentElement);
+                }
+            }
+        }
+    }
+    // //注册事件
+    // btn.onclick = function (){
+    //     if(text.value == ''){
+    //         alert('啥都没有发个鸡')
+    //     }else {
+    //         // 创建li
+    //         var li = document.createElement('li');
+    //         li.innerHTML = text.value;
+    //         // 添加li
+    //         ul.appendChild(li);
+    //     }
+    // }
+
+</script>
+</body>
+</html>

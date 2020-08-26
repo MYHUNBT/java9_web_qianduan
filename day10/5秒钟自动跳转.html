@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>点击</button>
+<div></div>
+<script>
+    var button = document.querySelector('button');
+    var div = document.querySelector('div');
+    button.addEventListener('click',function () {
+        var time = 3;
+        div.innerHTML = '您将在' + time + '之后跳转到百度页面'
+        setInterval(function () {
+            if(time === 0){
+                location.href = 'http://www.baidu.com';
+            } else {
+                time--;
+                div.innerHTML = '您将在' + time + '之后跳转到百度页面'
+            }
+        },1000)
+    })
+
+
+</script>
+</body>
+</html>

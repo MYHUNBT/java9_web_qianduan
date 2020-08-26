@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .first{
+            width: 200px;
+            height: 200px;
+            background-color: #ff4400;
+        }
+        .change{
+            background-color: blue;
+            color: white;
+            font-size: 30px;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="first">文本</div>
+<script>
+    var first = document.querySelector('div');
+    var flag = 0;
+    first.onclick = function (){
+        if(flag == 0){
+            flag = 1;
+            // first.style.backgroundColor = "blue";
+            // this.style.marginTop = "200px";
+            // this.style.fontSize = "30px";
+            // this.style.color = "white";
+            first.className = "first change";
+        }else {
+            flag = 0;
+            // this.style.marginTop = "0px";
+            // first.style.backgroundColor = "red";
+            // this.style.fontSize = "16px";
+            // this.style.color = "black";
+            first.className = "first";
+        }
+    }
+</script>
+</body>
+</html>

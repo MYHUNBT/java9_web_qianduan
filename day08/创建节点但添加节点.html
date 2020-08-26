@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>1234</li>
+</ul>
+    <script>
+        //创建节点
+        var li = document.createElement('li');
+        //添加节点 node.appendChild(Child) node父级 Child子级 append后面追加
+        var ul = document.querySelector('ul');
+        ul.appendChild(li);
+
+        //添加节点
+        //node.insertBefore(Child,指定元素)
+        var li2 = document.createElement('li');
+        ul.insertBefore(li2,ul.children[0]);
+
+        // 总结 我们想要在页面添加一个元素 1/创建节点 2/添加节点
+    </script>
+</body>
+</html>

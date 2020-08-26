@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p,div{
+            width: 300px;
+            height: 30px;
+            line-height: 30px;
+            color: green;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+<button>显示当前系统事件</button>
+<p></p>
+<div>某个时间</div>
+<script>
+    var button = document.querySelector('button');
+    var div = document.querySelector('div');
+    button.onclick = function (){
+        div.innerHTML = getDate();
+    }
+    function getDate(){
+        var date = new Date();
+        return "今天是"+ date.getUTCFullYear() + "年" + (date.getUTCMonth()+1) + "月" + date.getDate() + "日";
+    }
+    var p = document.querySelector('p');
+    p.innerHTML = getDate();
+</script>
+</body>
+</html>
